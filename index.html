@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Stage</title>
+	<style>
+	.indicator{
+		background-color: #FAFAFA !important;
+	}
+	input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+		border-bottom: 1px solid #424242;
+	}
+	html{
+		background-color: #FAFAFA !important;
+	}
+	</style>
+</head>
+<body>
+
+	<h1 class=" card-panel center-align">Stage</h1>
+	<div class="row">
+		<div class="col s12">
+			<ul class="tabs grey darken-3">
+				<li class="tab col s3"><a class="active" href="#hoy" style="color: #FAFAFA">Hoy</a></li>
+				<li class="tab col s3"><a href="#proximos" style="color: #FAFAFA">Proximos</a></li>
+				<li class="tab col s3"><a href="#bandas" style="color: #FAFAFA">Bandas</a></li>
+				<li class="tab col s3"><a href="#contacto" style="color: #FAFAFA">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="hoy" class="col s12">
+		<div class="carousel">
+			<a href="#odd" class="carousel-item"><img src="oddflyer.jpg"></a>
+			<a href="#hctk" class="carousel-item"><img src="hctkflyer.jpg"></a>
+			<a href="#wthb" class="carousel-item"><img src="wthbflyer.jpg"></a>
+		</div>
+	
+
+		<div class="row">
+	        <div class="col s12 m5">
+	          	<div class="card hoverable">
+		            <div class="card-image">
+		                <img src="yako.jpg">
+		            	<span class="card-title" style="color: #212121">We miss Yako</span>
+		            </div>
+		            <div class="card-content">
+		            	<p>No se que poner aqui pero podrian ir noticias, guitarrista del mes o no se algo asi, seria cuestion de platicarlo</p>
+		            </div>
+		            <div class="card-action">
+		           		<a href="#" style="color: #424242">Lee la nota</a>
+		           	</div>
+	          	</div>
+	        </div>
+	    </div>
+	</div>
+</body>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <script>$(document).ready(function(){
+   			$('ul.tabs').tabs();
+ 	});
+ 	$(document).ready(function(){
+      $('.carousel').carousel();
+    });
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });</script>
+    <script>$(".button-collapse").sideNav();</script>
+</html>

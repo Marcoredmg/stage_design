@@ -10,19 +10,42 @@
 		background-color: #FAFAFA !important;
 	}
 	input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
-		border-bottom: 1px solid #424242;
+		border-bottom: 1px solid #FAFAFA;
 	}
 	html{
-		background-color: #FAFAFA !important;
+		background-image: url("images/dark-bricks.jpg");
+		background-size: cover;
+	}
+	.card .card-image img {
+		height: 200px !important;
+		opacity: 1.0 !important;
+		
+	}
+	.row {
+		margin-bottom: 0px;
+	}
+	.carousel{
+		perspective: 2000px;
+	}
+	nav{
+		height: 150px;
+		opacity: 0.95;
+	}
+	.tabs{
+		opacity: 0.95;
 	}
 	</style>
 </head>
 <body>
-
-	<h1 class=" card-panel center-align">Stage</h1>
+	<nav class="grey darken-4">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">header en proceso</a>
+		</div>
+	</nav>
+	
 	<div class="row">
 		<div class="col s12">
-			<ul class="tabs grey darken-3">
+			<ul class="tabs grey darken-4">
 				<li class="tab col s3"><a class="active" href="#hoy" style="color: #FAFAFA">Hoy</a></li>
 				<li class="tab col s3"><a href="#proximos" style="color: #FAFAFA">Proximos</a></li>
 				<li class="tab col s3"><a href="#bandas" style="color: #FAFAFA">Bandas</a></li>
@@ -36,10 +59,11 @@
 			<a href="#odd" class="carousel-item"><img src="images/oddflyer.jpg"></a>
 			<a href="#hctk" class="carousel-item"><img src="images/hctkflyer.jpg"></a>
 			<a href="#wthb" class="carousel-item"><img src="images/wthbflyer.jpg"></a>
+			<a href="#odd" class="carousel-item"><img src="images/flyer.jpg"></a>
 		</div>
 	
 
-		<div class="row">
+		<!--<div class="row">
 	        <div class="col s12 m5">
 	          	<div class="card hoverable">
 		            <div class="card-image">
@@ -54,7 +78,51 @@
 		           	</div>
 	          	</div>
 	        </div>
-	    </div>
+	    </div>-->
+	</div>
+
+	<div id="bandas">
+		<div class="card row">
+    		<div class="card-image waves-effect waves-block waves-light col s3">
+        		<img class="activator" src="images/ktilogo.jpg">
+    		</div>
+    	<div class="card-content">
+      		<span class="card-title activator">Keys to Infinity<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">Entra al sitio</a></p>
+    	</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Keys to Infinity<i class="material-icons right">close</i></span>
+      			<p>Banda de Deathcore/DJENT</p>
+    		</div>
+  		</div>
+
+  		<div class="card row">
+    		<div class="card-image waves-effect waves-block waves-light col s3">
+        		<img class="activator" src="images/oddlogo2.png">
+    		</div>
+    	<div class="card-content">
+      		<span class="card-title activator">Odd<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">Entra al sitio</a></p>
+    	</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Odd<i class="material-icons right">close</i></span>
+      			<p>Banda de Rock Progresivo</p>
+    		</div>
+  		</div>
+
+  		<div class="card row">
+    		<div class="card-image waves-effect waves-block waves-light col s3">
+        		<img class="activator" src="images/airlogo.jpg">
+    		</div>
+    	<div class="card-content">
+      		<span class="card-title activator">After i reborn<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">Entra al sitio</a></p>
+    	</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">After i reborn<i class="material-icons right">close</i></span>
+      			<p>Banda de ???</p>
+    		</div>
+  		</div>
 	</div>
 </body>
 
@@ -70,4 +138,5 @@
       $('.slider').slider({full_width: true});
     });</script>
     <script>$(".button-collapse").sideNav();</script>
+
 </html>
